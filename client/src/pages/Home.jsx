@@ -87,8 +87,8 @@ const Home = () => {
                 <Navbar />
 
                 <img src="./hero.png" alt="Hero Background" />
-                <h1 className='font-poppins'>Find <span className='text-gradient '>Movies </span> You'll Enjoy Without The Hassle</h1> 
-                 <p className={`font-poppins mt-2 text-gray-400 text-center italic`}>Discover your next favorite movie with ease. Search, explore, and enjoy!</p>
+                <h1>Find <span className='text-gradient '>Movies </span> You'll Enjoy Without The Hassle</h1> 
+                 <p className={` mt-2 text-gray-400 text-center italic`}>Discover your next favorite movie with ease. Search, explore, and enjoy!</p>
             </header>
 
             {/* Search Bar */}
