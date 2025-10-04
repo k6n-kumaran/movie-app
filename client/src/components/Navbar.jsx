@@ -71,7 +71,7 @@ const Navbar = () => {
                                 localStorage.removeItem("token");
                                 localStorage.removeItem("user");
                                 window.location.reload(); 
-                                window.location.href = "/login";
+                                window.location.href = "/";
                               }}
                               className="w-full flex gap-2 px-4 py-2 text-white hover:bg-[#161616] "
                             >   
