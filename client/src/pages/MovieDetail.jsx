@@ -123,7 +123,7 @@ function MovieDetail() {
         <p><span className="font-bold">Release date:</span> {movie.release_date}</p>
         <p><span className="font-bold">Status:</span> {movie.status}</p>
         <p><span className="font-bold">Language:</span> {movie.original_language.toUpperCase()}</p>
-        <p><span className="font-bold">Countries:</span> {movie.production_countries[0].name}</p>
+        <p><span className="font-bold">Countries:</span> {movie.production_countries[0]?.name}</p>
         <p><span className="font-bold">Budget:</span> ${movie.budget.toLocaleString()}</p>
         <p><span className="font-bold">Revenue:</span> ${movie.revenue.toLocaleString()}</p>
         {movie.tagline && (
