@@ -107,7 +107,9 @@ const Home = () => {
               ) : (
                 <ul>
                   {movies.map((movie) => (
-                    <MovieCard key={movie.id} movie={movie} page={page}/>
+                    <li key={movie.id}>
+                      <MovieCard movie={movie} page={page}/>
+                    </li>
                   ))}
                 </ul>
               )}
@@ -120,8 +122,9 @@ const Home = () => {
                  className={`px-3 py-1 bg-gray-700 text-white rounded disabled:opacity-50 cursor-pointer`}          
                  onClick={() => setPage((prev) => prev - 1)}
                  disabled={page === 1}
+                 aria-label="Previous page"
                >
-                <ChevronLeft  />
+                <ChevronLeft  aria-hidden={true} />
                </button>
                <span className="text-white">
                  {page} / {totalPages}
@@ -131,8 +134,9 @@ const Home = () => {
                  className="px-3 py-1 bg-gray-700 text-white rounded disabled:opacity-50 cursor-pointer"
                  onClick={() => setPage((prev) => prev + 1)}
                  disabled={page === totalPages}
+                 aria-label="Next page"
                >
-                <ChevronRight />
+                <ChevronRight aria-hidden={true} />
                </button>
               </div>
             </div>
